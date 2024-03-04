@@ -1,0 +1,161 @@
+.home{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* -------------------- HERO SECTION ----------------- */
+.hero-banner{
+    display: flex;
+    justify-content: center;
+    background-image: url(../../assets/photos/Hero\ Banner.png);
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    margin-top: 2rem;
+    padding: 10px 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    border-radius: 32px;
+    text-align: center;
+    box-shadow: #6a6a6a 2px 4px 4px inset, #6a6a6a 2px 4px 6px;
+}
+.hero-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 90%;
+    user-select: none;
+}
+.hero-content h1{
+    font-weight: 700;
+    font-size: 24px;
+}
+.hero-name{
+    color: #293c6d;
+}
+.pipe{
+    display: none;
+}
+.hero-text{
+    font-size: 15px;
+    font-weight: 500;
+}
+
+/* -------------------- KEY COMPONENTS ----------------- */
+.component-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-color: #2E2E2E;
+    width: 260px;
+    height: 220px;
+    border-radius: 20px;
+    box-sizing: border-box;
+    user-select: none;
+}
+.component-container h3{
+    font-weight: 700;
+    font-size: 16px;
+    color: #FFFFFF;
+    text-align: center;
+    max-width: 220px;
+    user-select: none;
+}
+.component-container > *{
+    z-index: 10;
+}
+.component-image{
+    position: absolute;
+    width: 260px;
+    height: 220px;
+    opacity: 40%;
+    filter: blur(2px);
+    z-index: 5;
+}
+.component-image img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    margin-top: 3rem;
+    align-items: center;
+}
+.home-hr{
+    width: 150px;
+    height: 2px;
+    border: none;
+    background-color: rgb(0, 0, 0);
+    border-radius: 5px;
+    margin-top: 50px;
+}
+
+/* -------------------- Button ----------------- */
+.about-btn{
+    margin: 10px 0;
+}
+.btn-content{
+    font-size: 14px;
+    color: #000000;
+    font-weight: 500;
+}
+
+@media screen and (min-width: 1150px) {
+    .grid-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Media query for responsive hero section */
+@media screen and (min-width: 700px) {
+    .hero-banner{
+        text-align: left;
+        justify-content: start;
+        padding: 40px;
+        padding-bottom: 60px;
+    }
+    .hero-content{
+        max-width: 60%;
+        align-items: flex-start;
+    }
+    .hero-content h1{
+        font-size: 32px;
+    }
+    .hero-text{
+        font-size: 22px;
+    }
+    .about-btn{
+        margin: 0;
+        margin-left: 70px;
+    }
+    .btn-content{
+        font-size: 16px;
+        font-weight: 500;
+    }
+    .pipe{
+        display: inline-block;
+    }
+}
+
+/* Media query for responsive Key Component width */
+@media screen and (min-width: 600px) {
+    .component-container h3{
+        font-size: 24px;
+        max-width: 400px;
+    }
+    .component-container{
+        width: 540px;
+        height: 220px;
+    }
+    .component-image{
+        width: 540px;
+        height: 220px;
+    }
+}

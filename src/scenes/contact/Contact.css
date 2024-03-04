@@ -1,0 +1,87 @@
+.contact-us{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contact-us h1{
+    font-size: 30px;
+    font-weight: 700;
+    color: #273865;
+    text-align: center;
+    margin-top: 2rem;
+}
+.contact-data{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.contact-data-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 350px;
+}
+.contact-data-item h2{
+    font-size: 25px;
+    font-weight: 500;
+}
+.contact-data-item p{
+    font-size: 20px;
+    font-weight: 400;
+    margin: 0;
+}
+.input-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 60px;
+    width: 100%;
+    max-width: 500px;
+    font-family: "Poppins";
+}
+.input-form form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+}
+input, textarea{
+    font-family: "Poppins", sans-serif;
+    padding: 10px 0;
+    padding-left: 20px;
+    font-size: 16px;
+    border: 1px solid #2B3F71;
+    border-radius: 4px;
+    background-color: #d1e5f5;
+}
+button{
+    border-radius: 26px;
+    background-color: #2B3F71;
+    padding: 10px 20px;
+    border: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    width: fit-content;
+    margin-top: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    transition: 0.2s all ease;
+}
+button:hover{
+    scale: calc(1.1);
+}
+
+@media screen and (min-width: 700px) {
+    .contact-us h1{
+        font-size: 40px;
+    }
+    .contact-data-item h2{
+        font-size: 28px;
+    }
+    .contact-data{
+        flex-direction: row;
+        gap: 7rem;
+    }
+}

@@ -1,0 +1,52 @@
+.research-lab{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 20px;
+}
+.research-lab-hero{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+.research-lab-hero img{
+    object-fit: cover;
+    width: 200px;
+    height: 200px;
+}
+.research-lab-content{
+    display: flex;
+    flex-direction: column;
+}
+.research-lab h1{
+    font-weight: 700;
+    font-size: 30px;
+    color: #293c6d;
+}
+.research-lab p{
+    font-weight: 500;
+    font-size: 16px;
+    color: #484848;
+}
+
+@media screen and (min-width: 1000px) {
+    .research-lab{
+        padding: 20px 40px;
+    }
+    .research-lab-hero{
+        flex-direction: row;
+    }
+    .research-lab h1{
+        letter-spacing: 2px;
+        font-size: 40px;
+    }
+    .research-lab p{
+        font-size: 20px;
+        max-width: 600px;
+    }
+    .research-lab-hero img{
+        height: auto;
+        width: auto;
+    }
+}
