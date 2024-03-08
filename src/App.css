@@ -1,4 +1,4 @@
-.wrapper{
+.wrapper {
     display: flex;
     flex-direction: column;
     margin: 0 auto;
@@ -8,7 +8,7 @@
 }
 
 /* ------------------- NAVBAR ------------------------ */
-.navbar{
+.navbar {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -17,31 +17,36 @@
     width: 100%;
     box-sizing: border-box;
 }
-.logo img{
+
+.logo img {
     width: 220px;
     height: 70px;
     -webkit-user-drag: none;
 }
+
 .links {
     display: none;
-    gap: 55px;
-    font-size: 14px;
+    gap: 50px;
+    font-size: 15px;
     font-weight: 700;
     text-transform: uppercase;
     line-height: 25px;
 }
-.nav-link{
+
+.nav-link {
     display: flex;
     align-items: center;
-    padding: 0;
+    padding: 10px;
     margin: 0;
 }
-.nav-link a{
+
+.nav-link a {
     text-decoration: none;
     color: black;
     position: relative;
 }
-.nav-link a::before{
+
+.nav-link a::before {
     content: "";
     position: absolute;
     display: block;
@@ -53,37 +58,56 @@
     transform: scaleX(0);
     transition: transform 0.2s ease;
 }
-.nav-link a:hover::before{
-    transform: scaleX(1);
+
+.nav-link a:hover {
+    color: #27aae1;
 }
-.contact{
+
+.contact {
     border-radius: 26px;
     background-color: #2B3F71;
-    padding: 10px 20px;
+    padding: 20px;
 }
-.contact a{
+
+.contact a {
     font-size: 14px;
     text-decoration: none;
     color: white;
 }
 
+.nav-link a.active {
+    /* text-decoration: solid underline #27aae1a8 4px; */
+    background-color: #2B3F71;
+    padding: 10px;
+    color: white;
+}
+
+.mob-links a.active {
+    /* text-decoration: underline; */
+    color: #27aae1;
+}
+
 /* --------------------- MOBILE VIEW NAVBAR ------------------*/
-.mobile-view{
+.mobile-view {
     display: block;
 }
-.ham-icon, .close-icon{
+
+.ham-icon,
+.close-icon {
     display: block;
     height: 40px;
     width: 40px;
     cursor: pointer;
 }
-.close-icon{
+
+.close-icon {
     position: absolute;
     top: 40px;
     left: 40px;
     color: white;
 }
-.side-nav{
+
+.side-nav {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -95,11 +119,12 @@
     right: 0;
     background-color: #14213D;
     padding: 2rem 0;
-    z-index: 20;    
+    z-index: 20;
     transform: translateX(-110%);
     transition: .3s all ease;
 }
-.mob-links{
+
+.mob-links {
     display: flex;
     flex-direction: column;
     gap: 30px;
@@ -109,14 +134,17 @@
     list-style: none;
     font-size: 18px;
 }
-.mob-links li{
+
+.mob-links li {
     width: fit-content;
 }
-.mob-links a{
+
+.mob-links a {
     text-decoration: none;
     color: white;
 }
-.side-nav-footer{
+
+.side-nav-footer {
     display: flex;
     justify-content: center;
     color: white;
@@ -124,8 +152,9 @@
     height: 100px;
     width: 100%;
 }
+
 /* --------------------- FOOTER ------------------*/
-.footer{
+.footer {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -134,7 +163,8 @@
     height: 200px;
     margin-top: 5rem;
 }
-.footer-content{
+
+.footer-content {
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -143,34 +173,42 @@
     margin-top: 1rem;
     padding-bottom: 10px;
 }
-.white-logo{
+
+.white-logo {
     width: 300px;
 }
-.social-links{
+
+.social-links {
     display: flex;
     gap: 20px;
 }
+
 .social-links img {
     width: 38px;
     transition: 0.2s all ease;
 }
+
 .social-links img:hover {
     opacity: 60%;
 }
-.contact-info{
+
+.contact-info {
     display: none;
     flex-direction: column;
 }
-.contact-item{
+
+.contact-item {
     display: flex;
     align-items: center;
     gap: 20px;
 }
-.footer img{
+
+.footer img {
     -webkit-user-drag: none;
     user-select: none;
 }
-.footer-rights{
+
+.footer-rights {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -179,30 +217,35 @@
 }
 
 @media screen and (min-width: 1150px) {
-    .mobile-view{
+    .mobile-view {
         display: none;
     }
-    .links{
+
+    .links {
         display: flex;
     }
-    .side-nav{
+
+    .side-nav {
         display: none;
     }
-    .contact-info{
+
+    .contact-info {
         display: flex;
     }
-    .footer-content{
+
+    .footer-content {
         flex-direction: row;
         justify-content: space-evenly;
         padding: 0;
     }
-    .white-logo{
+
+    .white-logo {
         width: 300px;
     }
 }
 
 @media screen and (min-width: 500px) {
-    .logo img{
+    .logo img {
         width: 260px;
         height: 80px;
     }
