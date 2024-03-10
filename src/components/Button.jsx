@@ -12,7 +12,11 @@ const Button = ({ content, to }) => {
         alignItems: 'center',
         width: 'fit-content',
         height: '50px',
+<<<<<<< HEAD
         backgroundColor: '#FFFFFF',
+=======
+        backgroundColor: '#55c2da',
+>>>>>>> ce890be (Done with changes in homepage)
         borderRadius: '50px',
         boxSizing: 'border-box',
         boxShadow: '#6a6a6a 2px 4px',
