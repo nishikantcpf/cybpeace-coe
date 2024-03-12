@@ -19,7 +19,7 @@ import {
   CCTNS3,
   CCTNS4,
   Cyinnov82,
-} from "./events photos";
+} from "./events_photos";
 import EventDropdown from "../../components/EventDropdown";
 
 

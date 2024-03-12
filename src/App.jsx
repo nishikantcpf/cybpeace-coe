@@ -18,6 +18,7 @@ import COERegister from './scenes/COERegister/COERegister';
 import Events from './scenes/events/Events';
 import Glimpse from './scenes/glimpses/Glimpse';
 
+
 const App = () => {
   return (
     <div>
