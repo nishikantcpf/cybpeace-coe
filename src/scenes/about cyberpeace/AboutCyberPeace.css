@@ -80,9 +80,9 @@
     -webkit-user-drag: none;
 }
 
-/* .banner:hover {
-    animation-play-state: ;
-} */
+.banner:hover {
+    animation-play-state: paused ;
+}
 
 .cyberpeace-more {
     display: flex;
