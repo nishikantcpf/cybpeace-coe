@@ -1,75 +1,90 @@
-.cyberpeace{
+.cyberpeace {
     display: flex;
     flex-direction: column;
     padding: 10px 20px;
 }
-.cyberpeace-hero{
+
+.cyberpeace-hero {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
 }
-.cyberpeace-hero-content h1{
+
+.cyberpeace-hero-content h1 {
     font-weight: 700;
     font-size: 30px;
     color: #293c6d;
 }
-.cyberpeace p{
+
+.cyberpeace p {
     font-weight: 500;
     font-size: 16px;
     color: #484848;
     text-align: justify;
 }
-.cyberpeace-hero img{
+
+.cyberpeace-hero img {
     width: 100%;
     max-width: max-content;
 }
-.cyberpeace-aim{
+
+.cyberpeace-aim {
     display: flex;
     flex-direction: column-reverse;
     gap: 1rem;
     align-items: center;
     margin-top: 7rem;
 }
-.cyberpeace-aim-content h2, .cyberpeace-partners h2{
+
+.cyberpeace-aim-content h2,
+.cyberpeace-partners h2 {
     font-weight: 600;
     font-size: 25px;
     color: #293c6d;
     text-align: center;
 }
-.cyberpeace-partners{
+
+.cyberpeace-partners {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 7rem;
 }
-.banner-container{
-    height: 200px; 
+
+.banner-container {
+    height: 200px;
     width: 100%;
-    position: relative; 
+    position: relative;
     overflow: hidden;
+    border-left: 1px solid #0000002b;
+    border-right: 1px solid #0000002b;
 }
-.banner{
-    position: absolute; 
-    top: 0px; 
+
+.banner {
+    position: absolute;
+    top: 0px;
     left: 0px;
-    border: 1px solid black;
-    background-color: #fff;
+    /* border: 1px solid black;
+    background-color: #fff; */
     overflow: hidden;
     display: flex;
     white-space: nowrap;
     animation: bannermove 15s linear infinite;
 }
-.banner img{
+
+.banner img {
     margin: 0 2rem;
     object-fit: contain;
     user-select: none;
     -webkit-user-drag: none;
 }
-.banner:hover{
-    animation-play-state: paused;
-}
-.cyberpeace-more{
+
+/* .banner:hover {
+    animation-play-state: ;
+} */
+
+.cyberpeace-more {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -82,10 +97,12 @@
     border-radius: 20px;
     background-color: #add6f9;
 }
-.cyberpeace-more img{
+
+.cyberpeace-more img {
     width: 300px;
 }
-.cyberpeace-more a{
+
+.cyberpeace-more a {
     text-decoration: none;
     padding: 4px 10px;
     margin: 8px 0;
@@ -98,42 +115,51 @@
     transition: 0.2s all ease;
     user-select: none;
 }
-.cyberpeace-more a:hover{
+
+.cyberpeace-more a:hover {
     background-color: white;
     color: #23345b;
 }
 
 @media screen and (min-width: 1000px) {
-    .cyberpeace{
+    .cyberpeace {
         padding: 20px;
     }
-    .cyberpeace-hero{
+
+    .cyberpeace-hero {
         flex-direction: row;
     }
-    .cyberpeace-hero-content h1{
+
+    .cyberpeace-hero-content h1 {
         font-size: 40px;
     }
-    .cyberpeace p{
+
+    .cyberpeace p {
         font-size: 20px;
         max-width: 600px;
     }
-    .cyberpeace-aim{
+
+    .cyberpeace-aim {
         flex-direction: row;
         justify-content: space-around;
     }
-    .cyberpeace-aim-content{
+
+    .cyberpeace-aim-content {
         text-align: justify;
     }
-    .cyberpeace-aim-content h2, .cyberpeace-partners h2{
+
+    .cyberpeace-aim-content h2,
+    .cyberpeace-partners h2 {
         font-size: 30px;
     }
-    .cyberpeace-more{
+
+    .cyberpeace-more {
         flex-direction: row;
     }
 }
 
 @media screen and (min-width: 700px) {
-    .cyberpeace-more img{
+    .cyberpeace-more img {
         width: 600px;
     }
 }
@@ -142,7 +168,8 @@
     0% {
         transform: translate(0, 0);
     }
+
     100% {
         transform: translate(-50%, 0);
     }
-  }
+}
