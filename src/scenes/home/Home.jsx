@@ -1,7 +1,6 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Card, CardActionArea, CardContent, CardMedia, Typography } from '@mui/material';
 import Hero from "../../components/Hero";
-// import KeyComponents from "../../components/KeyComponents";
 import "./Home.css";
 import {
   ResearchLab,
@@ -11,9 +10,10 @@ import {
   TechPapers,
   Standards,
 } from '../../assets/photos';
-// import { color } from 'framer-motion';
 
 const Home = () => {
+  const [hoveredIndex, setHoveredIndex] = useState(null);
+
   const coeKeyComponents = [
     {
       title: "Research Lab",
@@ -47,6 +47,14 @@ const Home = () => {
     }
   ];
 
+  const handleMouseEnter = index => {
+    setHoveredIndex(index);
+  };
+
+  const handleMouseLeave = () => {
+    setHoveredIndex(null);
+  };
+
   return (
     <div className="home">
       <Hero />
@@ -54,7 +62,11 @@ const Home = () => {
       <div className="grid-container">
         {coeKeyComponents.map((comp, index) => (
           <div key={index} className="grid-item">
-            <Card>
+            <Card
+              onMouseEnter={() => handleMouseEnter(index)}
+              onMouseLeave={handleMouseLeave}
+              style={{ backgroundColor: hoveredIndex === index ? '#293c6d' : 'white', transition: '0.5s ease-in-out', borderRadius: '0.8rem' }}
+            >
               <CardActionArea href={comp.href}>
                 <CardMedia
                   component="img"
@@ -63,7 +75,7 @@ const Home = () => {
                   alt={comp.title}
                 />
                 <CardContent>
-                  <Typography gutterBottom component="div" style={{ color: '#293c6d', textAlign: 'center' }}>
+                  <Typography gutterBottom component="div" style={{ color: hoveredIndex === index ? 'white' : '#293c6d', textAlign: 'center', transition: '0.5s ease-in-out' }}>
                     {comp.title}
                   </Typography>
                 </CardContent>
