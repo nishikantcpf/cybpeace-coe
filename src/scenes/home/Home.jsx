@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Card, CardActionArea, CardContent, CardMedia, Typography } from '@mui/material';
 import Hero from "../../components/Hero";
 import "./Home.css";
+
 import {
   ResearchLab,
   CareerCounselling,
@@ -10,6 +11,7 @@ import {
   TechPapers,
   Standards,
 } from '../../assets/photos';
+
 
 const Home = () => {
   const [hoveredIndex, setHoveredIndex] = useState(null);
@@ -59,23 +61,26 @@ const Home = () => {
     <div className="home">
       <Hero />
       <hr className="home-hr" />
+      <Typography variant='h4' className='hero-name '  fontFamily='inherit' fontWeight='600' marginTop='5rem                       '  >
+        Our Offerings
+      </Typography>
       <div className="grid-container">
         {coeKeyComponents.map((comp, index) => (
           <div key={index} className="grid-item">
             <Card
               onMouseEnter={() => handleMouseEnter(index)}
               onMouseLeave={handleMouseLeave}
-              style={{ backgroundColor: hoveredIndex === index ? '#293c6d' : 'white', transition: '0.5s ease-in-out', borderRadius: '0.8rem' }}
+              style={{ backgroundColor: hoveredIndex === index ? '#293c6d' : '#ffffff99', transition: '0.5s ease-in-out', borderRadius: '0.8rem' }}
             >
               <CardActionArea href={comp.href}>
                 <CardMedia
                   component="img"
-                  height="140"
+                  height="220"
                   image={comp.image}
                   alt={comp.title}
                 />
                 <CardContent>
-                  <Typography gutterBottom component="div" style={{ color: hoveredIndex === index ? 'white' : '#293c6d', textAlign: 'center', transition: '0.5s ease-in-out' }}>
+                  <Typography gutterBottom component="div" style={{ color: hoveredIndex === index ? '#ffffffcc' : '#293c6d', textAlign: 'center', transition: '0.5s ease-in-out' }}>
                     {comp.title}
                   </Typography>
                 </CardContent>
