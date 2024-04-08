@@ -12,6 +12,7 @@ import {
 
 const Footer = () => {
   return (
+    // This is the second part of the Footer for the website the First Part is PartnerFooter.jsx 
     <div className="footer">
       <div className="footer-content">
         <img className="white-logo" src={CCOEWhite} alt="logo" />
@@ -45,7 +46,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="footer-rights">
-        <p style={{ color: "white" }}>Copyright ©️ 2021 CyberPeace</p>
+        <p style={{ color: "white" }}>Copyright ©️ 2024 CyberPeace</p>
       </div>
     </div>
   );
