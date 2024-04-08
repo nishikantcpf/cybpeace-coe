@@ -1,11 +1,11 @@
-.home{
+.home {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 /* -------------------- HERO SECTION ----------------- */
-.hero-banner{
+.hero-banner {
     display: flex;
     justify-content: center;
     background-image: url(../../assets/photos/Hero\ Banner.png);
@@ -20,30 +20,36 @@
     text-align: center;
     box-shadow: #6a6a6a 2px 4px 4px inset, #6a6a6a 2px 4px 6px;
 }
-.hero-content{
+
+.hero-content {
     display: flex;
     flex-direction: column;
     align-items: center;
     max-width: 90%;
     user-select: none;
 }
-.hero-content h1{
+
+.hero-content h1 {
     font-weight: 700;
     font-size: 24px;
 }
-.hero-name{
+
+.hero-name {
     color: #293c6d;
 }
-.pipe{
+
+.pipe {
     display: none;
 }
-.hero-text{
-    font-size: 15px;
+
+.hero-text {
+    font-size: 13px;
     font-weight: 500;
+    text-align: justify;
 }
 
 /* -------------------- KEY COMPONENTS ----------------- */
-.component-container{
+.component-container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -56,7 +62,8 @@
     box-sizing: border-box;
     user-select: none;
 }
-.component-container h3{
+
+.component-container h3 {
     font-weight: 700;
     font-size: 16px;
     color: #FFFFFF;
@@ -64,10 +71,12 @@
     max-width: 220px;
     user-select: none;
 }
-.component-container > *{
+
+.component-container>* {
     z-index: 10;
 }
-.component-image{
+
+.component-image {
     position: absolute;
     width: 260px;
     height: 220px;
@@ -75,86 +84,100 @@
     filter: blur(2px);
     z-index: 5;
 }
-.component-image img{
+
+.component-image img {
     object-fit: cover;
     width: 100%;
     height: 100%;
     border-radius: 20px;
 }
-.grid-container{
+
+.grid-container {
     display: grid;
     grid-template-columns: 1fr;
     gap: 3rem;
     margin-top: 3rem;
     align-items: center;
+    width: 80%;
 }
-.home-hr{
+
+.home-hr {
     width: 150px;
     height: 2px;
     border: none;
-    background-color: rgb(0, 0, 0);
+    background-color: transparent;
     border-radius: 5px;
     margin-top: 50px;
 }
 
 /* -------------------- Button ----------------- */
-.about-btn{
+.about-btn {
     margin: 10px 0;
 }
-.btn-content{
+
+.btn-content {
     font-size: 14px;
     color: #000000;
     font-weight: 500;
 }
 
 @media screen and (min-width: 1150px) {
-    .grid-container{
+    .grid-container {
         grid-template-columns: repeat(2, 1fr);
+        width: 80rem;
     }
 }
 
 /* Media query for responsive hero section */
 @media screen and (min-width: 700px) {
-    .hero-banner{
+    .hero-banner {
         text-align: left;
         justify-content: start;
         padding: 40px;
         padding-bottom: 60px;
     }
-    .hero-content{
+
+    .hero-content {
         max-width: 60%;
         align-items: flex-start;
     }
-    .hero-content h1{
+
+    .hero-content h1 {
         font-size: 32px;
     }
-    .hero-text{
-        font-size: 22px;
+
+    .hero-text {
+        font-size: 20px;
     }
-    .about-btn{
+
+    .about-btn {
         margin: 0;
         margin-left: 70px;
     }
-    .btn-content{
+
+    .btn-content {
         font-size: 16px;
         font-weight: 500;
     }
-    .pipe{
+
+    .pipe {
         display: inline-block;
     }
 }
 
 /* Media query for responsive Key Component width */
 @media screen and (min-width: 600px) {
-    .component-container h3{
+    .component-container h3 {
         font-size: 24px;
         max-width: 400px;
     }
-    .component-container{
+
+    .component-container {
         width: 540px;
         height: 220px;
     }
-    .component-image{
+
+    .component-image {
         width: 540px;
         height: 220px;
     }

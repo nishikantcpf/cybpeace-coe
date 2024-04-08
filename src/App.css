@@ -80,6 +80,7 @@
     background-color: #2B3F71;
     padding: 10px;
     color: white;
+    border-radius: 0.4rem;
 }
 
 .mob-links a.active {
