@@ -17,6 +17,7 @@ import COE from './scenes/coe/COE';
 import COERegister from './scenes/COERegister/COERegister';
 import Events from './scenes/events/Events';
 import Glimpse from './scenes/glimpses/Glimpse';
+import PartnerFooter from './components/PartnerFooter';
 
 
 const App = () => {
@@ -47,9 +48,10 @@ const App = () => {
           </Route>
 
         </Routes>
+        <PartnerFooter/>
       </PageWrapper>
-
       <Footer />
+
 
     </div>
   );
