@@ -13,6 +13,7 @@ const Button = ({ content, to }) => {
         width: 'fit-content',
         height: '50px',
         backgroundColor: '#FFFFFF',
+        backgroundColor: '#55c2da',
         borderRadius: '50px',
         boxSizing: 'border-box',
         boxShadow: '#6a6a6a 2px 4px',
