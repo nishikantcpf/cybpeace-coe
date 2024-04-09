@@ -40,10 +40,6 @@
 .hero-text{
     font-size: 15px;
     font-weight: 500;
-<<<<<<< HEAD
-=======
-    text-align: justify;
->>>>>>> ce890be (Done with changes in homepage)
 }
 
 /* -------------------- KEY COMPONENTS ----------------- */
@@ -108,11 +104,7 @@
 .btn-content{
     font-size: 14px;
     color: #000000;
-<<<<<<< HEAD
     font-weight: 500;
-=======
-    font-weight: 700;
->>>>>>> ce890be (Done with changes in homepage)
 }
 
 @media screen and (min-width: 1150px) {
@@ -137,19 +129,11 @@
         font-size: 32px;
     }
     .hero-text{
-<<<<<<< HEAD
         font-size: 22px;
     }
     .about-btn{
         margin: 0;
         margin-left: 70px;
-=======
-        font-size: 21px;
-    }
-    .about-btn{
-        margin: 0;
-        margin-left: 0px;
->>>>>>> ce890be (Done with changes in homepage)
     }
     .btn-content{
         font-size: 16px;

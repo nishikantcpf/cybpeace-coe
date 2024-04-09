@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-.wrapper {
-=======
 .wrapper{
->>>>>>> ce890be (Done with changes in homepage)
     display: flex;
     flex-direction: column;
     margin: 0 auto;
@@ -12,11 +8,7 @@
 }
 
 /* ------------------- NAVBAR ------------------------ */
-<<<<<<< HEAD
 .navbar {
-=======
-.navbar{
->>>>>>> ce890be (Done with changes in homepage)
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -25,33 +17,21 @@
     width: 100%;
     box-sizing: border-box;
 }
-<<<<<<< HEAD
 
-.logo img {
-=======
 .logo img{
->>>>>>> ce890be (Done with changes in homepage)
     width: 220px;
     height: 70px;
     -webkit-user-drag: none;
 }
-<<<<<<< HEAD
 
 .links {
     display: none;
     gap: 50px;
     font-size: 15px;
-=======
-.links {
-    display: none;
-    gap: 55px;
-    font-size: 14px;
->>>>>>> ce890be (Done with changes in homepage)
     font-weight: 700;
     text-transform: uppercase;
     line-height: 25px;
 }
-<<<<<<< HEAD
 
 .nav-link {
     display: flex;
@@ -61,25 +41,12 @@
 }
 
 .nav-link a {
-=======
-.nav-link{
-    display: flex;
-    align-items: center;
-    padding: 0;
-    margin: 0;
-}
-.nav-link a{
->>>>>>> ce890be (Done with changes in homepage)
     text-decoration: none;
     color: black;
     position: relative;
 }
-<<<<<<< HEAD
 
 .nav-link a::before {
-=======
-.nav-link a::before{
->>>>>>> ce890be (Done with changes in homepage)
     content: "";
     position: absolute;
     display: block;
@@ -91,7 +58,6 @@
     transform: scaleX(0);
     transition: transform 0.2s ease;
 }
-<<<<<<< HEAD
 
 .nav-link a:hover {
     color: #27aae1;
@@ -104,23 +70,11 @@
 }
 
 .contact a {
-=======
-.nav-link a:hover::before{
-    transform: scaleX(1);
-}
-.contact{
-    border-radius: 26px;
-    background-color: #2B3F71;
-    padding: 10px 20px;
-}
-.contact a{
->>>>>>> ce890be (Done with changes in homepage)
     font-size: 14px;
     text-decoration: none;
     color: white;
 }
 
-<<<<<<< HEAD
 .nav-link a.active {
     /* text-decoration: solid underline #27aae1a8 4px; */
     background-color: #2B3F71;
@@ -140,35 +94,20 @@
 
 .ham-icon,
 .close-icon {
-=======
-/* --------------------- MOBILE VIEW NAVBAR ------------------*/
-.mobile-view{
-    display: block;
-}
-.ham-icon, .close-icon{
->>>>>>> ce890be (Done with changes in homepage)
     display: block;
     height: 40px;
     width: 40px;
     cursor: pointer;
 }
-<<<<<<< HEAD
 
 .close-icon {
-=======
-.close-icon{
->>>>>>> ce890be (Done with changes in homepage)
     position: absolute;
     top: 40px;
     left: 40px;
     color: white;
 }
-<<<<<<< HEAD
 
 .side-nav {
-=======
-.side-nav{
->>>>>>> ce890be (Done with changes in homepage)
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -180,20 +119,12 @@
     right: 0;
     background-color: #14213D;
     padding: 2rem 0;
-<<<<<<< HEAD
     z-index: 20;
     transform: translateX(-110%);
     transition: .3s all ease;
 }
 
 .mob-links {
-=======
-    z-index: 20;    
-    transform: translateX(-110%);
-    transition: .3s all ease;
-}
-.mob-links{
->>>>>>> ce890be (Done with changes in homepage)
     display: flex;
     flex-direction: column;
     gap: 30px;
@@ -203,7 +134,6 @@
     list-style: none;
     font-size: 18px;
 }
-<<<<<<< HEAD
 
 .mob-links li {
     width: fit-content;
@@ -215,16 +145,6 @@
 }
 
 .side-nav-footer {
-=======
-.mob-links li{
-    width: fit-content;
-}
-.mob-links a{
-    text-decoration: none;
-    color: white;
-}
-.side-nav-footer{
->>>>>>> ce890be (Done with changes in homepage)
     display: flex;
     justify-content: center;
     color: white;
@@ -232,14 +152,9 @@
     height: 100px;
     width: 100%;
 }
-<<<<<<< HEAD
 
 /* --------------------- FOOTER ------------------*/
 .footer {
-=======
-/* --------------------- FOOTER ------------------*/
-.footer{
->>>>>>> ce890be (Done with changes in homepage)
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -248,12 +163,8 @@
     height: 200px;
     margin-top: 5rem;
 }
-<<<<<<< HEAD
 
 .footer-content {
-=======
-.footer-content{
->>>>>>> ce890be (Done with changes in homepage)
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -262,7 +173,6 @@
     margin-top: 1rem;
     padding-bottom: 10px;
 }
-<<<<<<< HEAD
 
 .white-logo {
     width: 300px;
@@ -273,20 +183,10 @@
     gap: 20px;
 }
 
-=======
-.white-logo{
-    width: 300px;
-}
-.social-links{
-    display: flex;
-    gap: 20px;
-}
->>>>>>> ce890be (Done with changes in homepage)
 .social-links img {
     width: 38px;
     transition: 0.2s all ease;
 }
-<<<<<<< HEAD
 
 .social-links img:hover {
     opacity: 60%;
@@ -298,21 +198,10 @@
 }
 
 .contact-item {
-=======
-.social-links img:hover {
-    opacity: 60%;
-}
-.contact-info{
-    display: none;
-    flex-direction: column;
-}
-.contact-item{
->>>>>>> ce890be (Done with changes in homepage)
     display: flex;
     align-items: center;
     gap: 20px;
 }
-<<<<<<< HEAD
 
 .footer img {
     -webkit-user-drag: none;
@@ -320,13 +209,6 @@
 }
 
 .footer-rights {
-=======
-.footer img{
-    -webkit-user-drag: none;
-    user-select: none;
-}
-.footer-rights{
->>>>>>> ce890be (Done with changes in homepage)
     display: flex;
     justify-content: center;
     align-items: center;
@@ -335,7 +217,6 @@
 }
 
 @media screen and (min-width: 1150px) {
-<<<<<<< HEAD
     .mobile-view {
         display: none;
     }
@@ -353,46 +234,19 @@
     }
 
     .footer-content {
-=======
-    .mobile-view{
-        display: none;
-    }
-    .links{
-        display: flex;
-    }
-    .side-nav{
-        display: none;
-    }
-    .contact-info{
-        display: flex;
-    }
-    .footer-content{
->>>>>>> ce890be (Done with changes in homepage)
         flex-direction: row;
         justify-content: space-evenly;
         padding: 0;
     }
-<<<<<<< HEAD
 
     .white-logo {
-=======
-    .white-logo{
->>>>>>> ce890be (Done with changes in homepage)
         width: 300px;
     }
 }
 
 @media screen and (min-width: 500px) {
-<<<<<<< HEAD
     .logo img {
         width: 260px;
         height: 80px;
     }
 }
-=======
-    .logo img{
-        width: 260px;
-        height: 80px;
-    }
-}
->>>>>>> ce890be (Done with changes in homepage)

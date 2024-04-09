@@ -41,11 +41,7 @@ const COE = () => {
           <span style={{ color: "black" }}>| Center of Excellence (CCoE)</span>
         </h1>
         <img src={RDFramework} alt="ccoe-research-development" />
-<<<<<<< HEAD
         <p>
-=======
-        <p className="hero-text">
->>>>>>> ce890be (Done with changes in homepage)
           CyberPeace COE is a 'Community Driven Collaborative Framework for
           Research and Development for Academia and Allied Institutions'. Our
           Vision is to create a bed/cluster of research in academic and allied
