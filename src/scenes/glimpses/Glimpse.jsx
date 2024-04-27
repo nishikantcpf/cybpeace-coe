@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-import { Carousel } from "react-responsive-carousel";
 import "./Glimpse.css";
 import {
   COEJHA1,
@@ -21,13 +20,9 @@ import {
   Sakec2,
   Sakec3,
 } from "./glimpse photos";
+import CloseIcon from '@mui/icons-material/Close';
 
 const Glimpse = () => {
-  const [currentJharkhand, setCurrentJharkhand] = useState();
-  const [currentLab, setCurrentLab] = useState();
-  const [currentMou, setCurrentMou] = useState();
-  const [currentSakec, setCurrentSakec] = useState();
-
   const glimpseList = [
     {
       name: "CyberPeace COE Labs",
@@ -40,68 +35,61 @@ const Glimpse = () => {
         COELAB6,
         COELAB8,
         COELAB9,
-      ],
-      state: currentLab,
-      onChange: (index) => {
-        setCurrentLab(index);
-      },
+      ]
     },
     {
       name: "CCOE Inauguration At Ranchi University",
-      image: [COEJHA1, COEJHA2, COEJHA3],
-      state: currentJharkhand,
-      onChange: (index) => {
-        setCurrentJharkhand(index);
-      },
+      image: [COEJHA1, COEJHA2, COEJHA3]
     },
     {
       name: "CyberPeace COE - MoU & Collaborations",
-      image: [MOU1, MOU2, MOU3],
-      state: currentMou,
-      onChange: (index) => {
-        setCurrentMou(index);
-      },
+      image: [MOU1, MOU2, MOU3]
     },
     {
       name: "CyberPeace COE at Sakec, Mumbai",
-      image: [Sakec1, Sakec2, Sakec3],
-      state: currentSakec,
-      onChange: (index) => {
-        setCurrentSakec(index);
-      },
+      image: [Sakec1, Sakec2, Sakec3]
     },
   ];
+  
+  const [model, setModel] = useState(false)
+  const [tempImgSrc, setTempImgSrc] = useState('')
+  const [tempImgIndex, setTempImgIndex] = useState(0);
+
+  const getImg = (imgSrc, index) => {
+    setTempImgSrc(imgSrc);
+    setTempImgIndex(index);
+    setModel(true);
+  }
+
+  const closeModel = () => {
+    setModel(false);
+  }
 
   return (
-    <div className="glimpse">
-      <h1>Center of Excellence Glimpse</h1>
-
-      <div className="glimpse-container">
-        {glimpseList.map((glimpse, i) => (
-          <div className="glimpse-item" key={i}>
-            <h2>{glimpse.name}</h2>
-
-            <div className="glimpse-carousel-container">
-              <Carousel
-                showArrows={true}
-                autoPlay={true}
-                infiniteLoop={true}
-                selectedItem={glimpse.image[glimpse.state]}
-                onChange={glimpse.onChange}
-                className="glimpse-carousel"
-                showThumbs={false}
-              >
-                {glimpse.image.map((img, i) => (
-                  <img key={i} src={img} alt={`${glimpse.name} ${i}`} />
-                ))}
-              </Carousel>
+    <>
+      <div className={model ? "model open" : "model"}> 
+        <img src={tempImgSrc} alt=" " />
+        <CloseIcon onClick={closeModel} />
+      </div>
+      <div>
+        {glimpseList.map((gallery, galleryIndex) => (
+          <React.Fragment key={galleryIndex}>
+            <h2 style={{textAlign: 'center'}}> {gallery.name}</h2>
+            <div className="gallery">
+              {gallery.image.map((imgSrc, imgIndex) => (
+                <div className="pics" key={galleryIndex + "-" + imgIndex} onClick={() => getImg(imgSrc, imgIndex)}>
+                  <img src={imgSrc} style={{ width: '100%' }} alt="" loading="lazy" />
+                </div>
+              ))}
             </div>
-          </div>
-
+          </React.Fragment>
         ))}
       </div>
-    </div>
+    </>
   );
+  
+  
+  
 };
 
 export default Glimpse;

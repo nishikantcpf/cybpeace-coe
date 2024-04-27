@@ -10,11 +10,9 @@
 .event-list{
     display: flex;
     flex-direction: column;
-    gap: 10px;
 }
 .event-item{
-    padding: 0 20px;
-    border-bottom: 1px solid #616161;
+    padding: 10px 0px;
 }
 .event-item h2{
     font-size: 18px;
@@ -32,7 +30,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 10px 0;
 }
 .event-content img{
     width: 100%;
@@ -64,4 +61,18 @@
     .carousel-container {
         max-width: 600px;
     }
+}
+
+.event-maincontent img {
+    object-fit: cover; /* Ensure images cover the entire container */
+    height: 220px;
+    width: 100%;
+  }
+
+.event-maincontent {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;  
+    align-items: center;
+    gap: 10px 0px;
 }
