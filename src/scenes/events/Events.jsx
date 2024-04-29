@@ -45,7 +45,7 @@ const Events = () => {
 
   return (
     <div className="events">
-      <h1>Some Important Events</h1>
+      <h1 style={{textAlign: 'center'}}>Some Important Events</h1>
 
       <div className="event-list">
         {events.map((event, index) => (
@@ -58,7 +58,7 @@ const Events = () => {
                     <img src={event.image} alt={`Event ${index + 1}`} />
                     <div className="event-body" style={{ padding: '1rem' }}>
                       <h2 style={{ textAlign: "left"}} >{event.title}</h2>
-                      <div style={{ textAlign: "justify"}}>
+                      <div style={{ textAlign: "justify", fontWeight:'500'}}>
 
                         {event.body}
                       </div>
@@ -68,7 +68,7 @@ const Events = () => {
                   <>
                     <div className="event-body" style={{ padding: '1rem' }}>
                       <h2 style={{ textAlign: "left"}} >{event.title}</h2>
-                      <div style={{ textAlign: "justify"}}>
+                      <div style={{ textAlign: "justify" , fontWeight:'500'}}>
                         {event.body}
                       </div>
 

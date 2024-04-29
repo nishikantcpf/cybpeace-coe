@@ -53,11 +53,9 @@ const Glimpse = () => {
   
   const [model, setModel] = useState(false)
   const [tempImgSrc, setTempImgSrc] = useState('')
-  const [tempImgIndex, setTempImgIndex] = useState(0);
 
   const getImg = (imgSrc, index) => {
     setTempImgSrc(imgSrc);
-    setTempImgIndex(index);
     setModel(true);
   }
 
@@ -74,7 +72,7 @@ const Glimpse = () => {
       <div>
         {glimpseList.map((gallery, galleryIndex) => (
           <React.Fragment key={galleryIndex}>
-            <h2 style={{textAlign: 'center'}}> {gallery.name}</h2>
+            <h2 style={{textAlign: 'center', padding: '3rem'}}> {gallery.name}</h2>
             <div className="gallery">
               {gallery.image.map((imgSrc, imgIndex) => (
                 <div className="pics" key={galleryIndex + "-" + imgIndex} onClick={() => getImg(imgSrc, imgIndex)}>
