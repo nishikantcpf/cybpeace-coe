@@ -72,7 +72,9 @@ const Glimpse = () => {
       <div>
         {glimpseList.map((gallery, galleryIndex) => (
           <React.Fragment key={galleryIndex}>
-            <h2 style={{textAlign: 'center', padding: '3rem'}}> {gallery.name}</h2>
+            <div style={{height:'40vh', display:'flex', justifyContent:'center', alignItems: 'center'}}>
+            <h1 style={{textAlign: 'center', padding: '3rem', fontSize: '40px', color: '#293c6d'}}> {gallery.name}</h1 >
+            </div>
             <div className="gallery">
               {gallery.image.map((imgSrc, imgIndex) => (
                 <div className="pics" key={galleryIndex + "-" + imgIndex} onClick={() => getImg(imgSrc, imgIndex)}>
