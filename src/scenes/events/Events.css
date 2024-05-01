@@ -4,7 +4,6 @@
 }
 .events h1{
     font-weight: 700;
-    font-size: 30px;
     color: #293c6d;
 }
 .event-list{
@@ -15,16 +14,8 @@
     padding: 10px 0px;
 }
 .event-item h2{
-    font-size: 18px;
     font-weight: 500;
     margin-bottom: 10px;
-}
-.event-header{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    cursor: pointer;
-    user-select: none;
 }
 .event-content{
     display: flex;
@@ -36,30 +27,13 @@
     max-width: 300px;
     border-radius: 5px;
 }
-.event-content p{
-    font-weight: 400;
-    font-size: 16px;
-    text-align: justify;
-}
-.carousel-container {
-    max-width: 350px;
-}
 
 @media screen and (min-width: 1000px) {
     .events h1{
         font-size: 40px;
     }
-    .event-item h2{
-        font-size: 24px;
-    }
-    .event-content p{
-        font-size: 20px;
-    }
     .event-content img{
         max-width: 500px;
-    }
-    .carousel-container {
-        max-width: 600px;
     }
 }
 
@@ -75,4 +49,51 @@
     justify-items: center;  
     align-items: center;
     gap: 10px 0px;
+}
+
+.fontSize32-24{
+    font-size: 32px;
+}
+
+.fontSize20-12{
+    font-size: 20px;
+}
+
+@media (max-width : 640px) {
+    .fontSize32-24{
+        font-size: 24px;
+    }
+    
+    .fontSize20-12{
+        font-size: 12px;
+    } 
+}
+.cover-img {
+    position: relative;
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden; /* Ensure overflow is hidden to contain the blur */
+}
+
+.cover-img::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('https://www.creativefabrica.com/wp-content/uploads/2022/01/31/Abstract-Blue-Background-Graphics-24402594-1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.6;
+    -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+            mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+    filter: blur(10px); 
+}
+
+.cover-img > * {
+    position: relative;
+    z-index: 1;
 }
