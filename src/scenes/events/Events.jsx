@@ -7,7 +7,28 @@ import {
   Darkathon,
   CCTNS,
   Cyinnov8,
+
 } from "./events photos";
+
+//   Darkathon,
+//   DefenseChallenge,
+//   GlobalChallenge,
+//   GlobalChallenge2,
+//   GlobalChallenge3,
+//   GlobalChallenge4,
+//   DefenseChallenge2,
+//   DefenseChallenge3,
+//   Corps2,
+//   Corps3,
+//   Corps4,
+//   CCTNS2,
+//   CCTNS3,
+//   CCTNS4,
+//   Cyinnov82,
+// } from "./events_photos";
+import EventDropdown from "../../components/EventDropdown";
+
+
 
 const Events = () => {
   const events = [

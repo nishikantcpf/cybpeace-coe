@@ -19,6 +19,7 @@ import Events from './scenes/events/Events';
 import Glimpse from './scenes/glimpses/Glimpse';
 import PartnerFooter from './components/PartnerFooter';
 
+
 const App = () => {
   return (
     <div>
