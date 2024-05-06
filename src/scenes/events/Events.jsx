@@ -8,7 +8,7 @@ import {
   CCTNS,
   Cyinnov8,
 
-} from "./events photos";
+} from "./events_photos";
 
 //   Darkathon,
 //   DefenseChallenge,
