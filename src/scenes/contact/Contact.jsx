@@ -21,7 +21,9 @@ const Contact = () => {
 
   return (
     <div className='contact-us'>
+        <div style={{height:'40vh', display:'flex', justifyContent:'center', alignItems: 'center'}}>
         <h1>GET IN TOUCH WITH US</h1>
+        </div>
         <div className='contact-data'>
             <motion.div 
                 className='contact-data-item'
